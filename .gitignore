@@ -5,7 +5,7 @@ out/
 coverage/
 
 # generated static copies; source images live in /Images
-public/Images/
+public/images/
 
 .DS_Store
 *.log

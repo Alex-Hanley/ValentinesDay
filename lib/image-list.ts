@@ -1,5 +1,5 @@
 /**
- * Image filenames in /Images (served from public/Images after copy-images).
+ * Image filenames in /Images (served from public/images after copy-images).
  * Generated from Images folder — run `npm run copy-images` to sync.
  */
 export const IMAGE_FILENAMES = [
@@ -45,5 +45,5 @@ export const IMAGE_FILENAMES = [
 ];
 
 export function getImageSrc(filename: string): string {
-  return `/Images/${encodeURIComponent(filename)}`;
+  return `/images/${encodeURIComponent(filename)}`;
 }

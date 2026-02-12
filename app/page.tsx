@@ -207,7 +207,7 @@ export default function ValentinePage() {
         transition={{ duration: FADE_TO_PINK_MS / 1000, ease: "easeOut" }}
       >
         <Image
-          src="/Images/nyc.png"
+          src="/images/nyc.png"
           alt=""
           fill
           className="object-cover"

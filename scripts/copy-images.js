@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const src = path.join(__dirname, "..", "Images");
-const dest = path.join(__dirname, "..", "public", "Images");
+const dest = path.join(__dirname, "..", "public", "images");
 
 if (!fs.existsSync(src)) {
   console.warn("Images folder not found at", src);
@@ -17,4 +17,4 @@ const files = fs.readdirSync(src).filter((f) => /\.(jpe?g|png|webp|gif)$/i.test(
 files.forEach((file) => {
   fs.copyFileSync(path.join(src, file), path.join(dest, file));
 });
-console.log("Copied", files.length, "images to public/Images");
+console.log("Copied", files.length, "images to public/images");

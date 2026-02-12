@@ -10,7 +10,7 @@ A single-page Valentine site: soft, modern, with floating photos and a glassmorp
    ```
 
 2. **Images**  
-   Photos in `Images/` are copied to `public/Images` when you run:
+   Photos in `Images/` are copied to `public/images` when you run:
    ```bash
    npm run copy-images
    ```
@@ -46,9 +46,9 @@ Valentines/
 ├── lib/
 │   └── image-list.ts          # Image filenames (from Images/)
 ├── public/
-│   └── Images/                # Populated by copy-images
+│   └── images/                # Populated by copy-images
 ├── scripts/
-│   └── copy-images.js         # Copies Images/ → public/Images
+│   └── copy-images.js         # Copies Images/ → public/images
 └── package.json
 ```
 
