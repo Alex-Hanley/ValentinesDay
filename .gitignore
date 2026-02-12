@@ -1,0 +1,11 @@
+node_modules/
+.next/
+dist/
+out/
+coverage/
+
+# generated static copies; source images live in /Images
+public/Images/
+
+.DS_Store
+*.log

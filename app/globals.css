@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-cormorant: "Cormorant Garamond", Georgia, serif;
+  --font-outfit: "Outfit", system-ui, sans-serif;
+}
+
+body {
+  background: transparent;
+}
+
+@keyframes float-drift {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  33% {
+    transform: translate(8px, -6px) rotate(1deg);
+  }
+  66% {
+    transform: translate(-6px, 8px) rotate(-1deg);
+  }
+}
+
+@keyframes float-drift-heart {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(0, -6px) scale(1.08);
+  }
+}
+
+.float-drift {
+  animation: float-drift 8s ease-in-out infinite;
+}
+
+.float-drift-heart {
+  animation: float-drift-heart 4s ease-in-out infinite;
+}
